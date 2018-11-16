@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+@mixin btn($borderColor) {
+  width: 300px;
+  height: 30px;
+  border: 2px solid $borderColor;
+  border-radius: 50%;
+}
+.btn1 {
+  @include btn(red);
+}
+.btn2 {
+  @include btn(blue);
+}
+.btn3 {
+  @include btn(green);
+}
+
+$path: "../images/";
+
+@mixin bgi($imageName) {
+  background-image: url(#{$path}#{$imageName});
+}
+
+%logogo {
+  &::after {
+    content: "";
+    display: inline-block;
+    background-image: url("../images/logo3.png");
+    background-size: cover;
+    width: 108px;
+    height: 37px;
+    margin-left: 23px;
+  }
+}

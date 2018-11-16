@@ -1,0 +1,300 @@
+.back-color {
+  background-color: #f6f6f6;
+}
+
+.end-user {
+  height: 640px;
+  color: #323232;
+  min-width: 1400px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #f6f6f6;
+
+  @include tablet {
+    height: 523px;
+    min-width: 320px;
+    max-wdith: 320px;
+    margin: 0 auto;
+    background-color: #f6f6f6;
+  }
+}
+
+.end-user-in {
+  width: 760px;
+  margin: 0 auto;
+
+  @include tablet {
+    width: 280px;
+    margin: 0 auto;
+  }
+}
+
+.my-info {
+  padding-top: 52px;
+
+  @include tablet {
+    padding-top: 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+    padding-bottom: 20px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.my-info-ul {
+  border-top: 1px solid #c1c1c1;
+  border-bottom: 1px solid #c1c1c1;
+  color: #c1c1c1;
+  font-weight: 600;
+
+  @include tablet {
+    border: 1px solid #e3e3e3;
+    background-color: #fff;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  li {
+    float: left;
+
+    @include tablet {
+      width: 50%;
+    }
+  }
+
+  li:first-child {
+    padding-right: 30px;
+    padding: 14px 0;
+
+    @include tablet {
+      background-color: #e3e3e3;
+    }
+  }
+
+  li:nth-child(2) {
+    padding: 14px 0;
+    color: #ff2e08;
+    margin-left: 20px;
+
+    @include mobile {
+      margin: 0;
+    }
+  }
+}
+
+.password {
+  h2 {
+    padding-top: 45px;
+    font-size: 18px;
+    padding-bottom: 20px;
+
+    @include tablet {
+      font-size: 11px;
+      padding-bottom: 11px;
+      padding-top: 20px;
+    }
+  }
+}
+
+.password-table {
+  border-top: 3px solid #ff2e08;
+  border-bottom: 2px solid #c1c1c1;
+  height: 136px;
+  border-collapse: collapse;
+  width: 100%;
+
+  @include tablet {
+    height: 122px;
+  }
+
+  th,
+  td {
+    vertical-align: middle;
+  }
+
+  th {
+    background-color: #eaeaea;
+    width: 160px;
+    font-size: 14px;
+    font-weight: 400;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  td {
+    position: relative;
+
+    input {
+      width: 200px;
+      height: 28px;
+      margin-left: 20px;
+
+      @include tablet {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border: 0;
+        padding: 0 14px;
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 10px;
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid #dddddd;
+  }
+}
+
+//버튼
+.end-user-button {
+  text-align: right;
+  padding-top: 10px;
+
+  @include tablet {
+    padding-top: 250px;
+  }
+
+  button {
+    width: 70px;
+    height: 34px;
+    background-color: #eeeeee;
+    font-size: 15px;
+
+    @include tablet {
+      width: 138px;
+      height: 33px;
+    }
+
+    &:hover {
+      background-color: #323232;
+      color: #fff;
+    }
+  }
+
+  .end-user-btn1 {
+    margin-right: 3px;
+
+    @include tablet {
+      margin: 0;
+    }
+  }
+}
+
+.password-rule-btn {
+  width: 125px;
+  height: 28px;
+  border-radius: 2px;
+  background-color: #eaeaea;
+  position: absolute;
+  top: 8px;
+  right: 245px;
+  border: 1px solid #c1c1c1;
+  font-size: 14px;
+  letter-spacing: -0.025em;
+  padding: 0;
+
+  @include tablet {
+    border-radius: 1px;
+    width: 80px;
+    height: 25px;
+    font-size: 9px;
+    right: 10px;
+  }
+
+  &:hover {
+    background-color: #c1c1c1;
+  }
+}
+
+.password-rule-btn-hover {
+  background-color: #c1c1c1;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.password-rule {
+  //border: 2px solid red;
+  content: "";
+  display: none;
+  background-image: url("../images/password-rule.png");
+  width: 312px;
+  height: 235px;
+  position: absolute;
+  top: -40px;
+  left: 360px;
+  z-index: 99;
+  padding-left: 40px;
+  font-size: 13px;
+
+  @include tablet {
+    background-image: url("../images/password-rule-mobile.png");
+    background-size: cover;
+    width: 203px;
+    height: 173px;
+    top: 35px;
+    left: 70px;
+    padding-left: 15px;
+  }
+
+  h2 {
+    font-size: 17px;
+    padding: 30px 0;
+
+    @include tablet {
+      font-size: 11px;
+      padding: 20px 0;
+    }
+  }
+
+  p {
+    line-height: 24px;
+    letter-spacing: -0.025em;
+
+    @include tablet {
+      font-size: 10px;
+      line-height: 18px;
+    }
+  }
+}
+
+.password-rule-display {
+  display: block;
+}
+
+.password-rule-close {
+  content: "";
+  display: block;
+  background-image: url('../images/password-rule-close.png');
+  width: 14px;
+  height: 14px;
+  background-size: cover;
+  position: absolute;
+  top: 15px;
+  left: 280px;
+
+  @include tablet {
+    width: 9.5px;
+    height: 9.5px;
+    top: 20px;
+    left: 180px;
+  }
+}

@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/*
+    author: zpark
+    update: 10-02
+*/
+
+//공통 사용
+@import "helpers/mixin";
+@import "helpers/variables";
+
+//기본 스타일
+@import "base/common";
+@import "base/reset";
+@import "base/grid";
+@import "base/media";
+
+//레이아웃
+@import "layout/header";
+@import "layout/footer";
+@import "layout/end-user";
+@import "layout/wrong";
